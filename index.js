@@ -26,3 +26,9 @@ let url="https://serverd.onrender.com/products"
     })
     form.reset()
 }
+let mydata=async()=>{
+    let res=await fetch(`https://serverd.onrender.com/products`)
+    res=await res.json()
+    console.log(res)
+}
+mydata()
