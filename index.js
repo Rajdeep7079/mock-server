@@ -10,10 +10,19 @@ let getdata=async(e)=>{
     let product={
  name:name.value,
  brand:brand.value,
- price:price.value,
+ price:+price.value,
  image:image.value,
 
 
     }
     console.log(product)
+let url="https://serverd.onrender.com/products"
+    await fetch(url,{
+        method:"POST",
+        body:JSON.stringify(product),
+        headers:{
+            "Content-Type":"appplication/json"
+        },
+    })
+    form.reset()
 }
