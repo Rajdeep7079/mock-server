@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img{
+            height: 200px ;
+            width: 200px;
+        }
+        #container>div{
+            border:1px solid
+        }
+        #container{
+            display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+gap: 40px;
+
+        }
+    </style>
 </head>
 <body>
     <form action="" id="form" onsubmit="getdata(event)">
@@ -13,6 +29,9 @@
         <input type="number" name="" id="price" placeholder="price">
         <input type="text"  id="image" placeholder="image">
         <input type="submit" placeholder="add product"></form>
+
+
+        <div id="container" ></div>
     
 </body>
 </html>
