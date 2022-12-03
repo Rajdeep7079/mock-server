@@ -64,7 +64,7 @@ cont.innerHTML=null
 toggle.addEventListener("click",async()=>{
  var isbuyed=!isbuyed
  
-  await fetch(`https://server-products.onrender.com/products`,{
+  await fetch(`https://server-products.onrender.com/products/${e.id}`,{
       method:"PATCH",
       body:JSON.stringify(isbuyed),
       headers:{
